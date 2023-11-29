@@ -21,9 +21,9 @@ global.prefa = ["."];                                    //Default prefix here. 
 
 
 //
-global.Owner = ["62895372305081", "6287737226143"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.OwnerNumber = ["62895372305081", "6287737226143"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.ownertag = ["62895372305081"];
+global.Owner = ["62895372305081", "6287737226143", "6282326322300"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.OwnerNumber = ["62895372305081", "6287737226143", "6282326322300"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.ownertag = ["62895372305081", "6282326322300"];
 global.OwnerName = "RLP27";
 global.BotName = "EMILY";
 global.packname = "EMILY Bot";                             //Do not change.
@@ -79,19 +79,19 @@ global.ntilink = []
 
 //
 global.mess = {
-  jobdone: 'Here you go...',
-  useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
-  botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-  botowner: 'Only my *Owner* can use this command, Baka!',
-  grouponly: 'This command is only made for *Groups*, Baka!',
-  privateonly: 'This command is only made for *Private Chat*, Baka!',
-  botonly: 'Only the *Bot itself* can use this command!',
-  waiting: 'Just Wait...',
-  nolink: 'Please provide me *link*, Baka!',
-  error: 'An error occurd!',
-  banned: 'You are *Banned* fron using commands!',
-  bangc: 'This Group is *Banned* from using Commands!',
-  nonsfw: 'Dont be a pervert Baka! This is not a NSFW enabled group!'
+  jobdone: 'OKE JADI...',
+  useradmin: 'HM APAJAH KAMU ADMIN GRUP?',
+  botadmin: 'JADIKAN SAYA ADMIN BANG :) .',
+  botowner: 'LU BUKAN OWNER HANYA RIZKY SENPAI YG BISA PAKE mwheehe',
+  grouponly: 'hanya bisa dipakai di dalam grup brother',
+  privateonly: 'CHAT SAYA SECARA PRIVATE UNTUK MEMAKAI FITUR INI',
+  botonly: 'INI FITUR HANYA SAYA SENDIRI YANG BISA PAKAI HEHE',
+  waiting: 'MENUNGGU PAHALA...',
+  nolink: 'Tidak boleh mengirim link ya!!',
+  error: 'Maaf Emily bingung!',
+  banned: 'Kamu kena banned!',
+  bangc: 'Grup ini kena banned,saya tidak bisa di gunakan dibgrup ini!',
+  nonsfw: 'INI FITUR MAU SAYA HAPUS :)'
 
 }
 
