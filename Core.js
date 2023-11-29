@@ -1158,7 +1158,8 @@ Typed *surrender* to surrender and admited defeat`
 
       //Hosted platfrom info
       case 'server':
-      case 'sysinfo': {
+      case 'sysinfo':
+      case 'ping': {
         const used = process.memoryUsage();
         const cpu = os.cpus()[0];
         const totalCpuUsage = (100 * (cpu.times.user + cpu.times.nice + cpu.times.sys + cpu.times.irq) / cpu.times.idle).toFixed(2);
@@ -3587,7 +3588,7 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
-      case 'hidetag': case 'tag': case 'ping': {
+      case 'hidetag': case 'tag': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
@@ -6892,18 +6893,14 @@ _Click the button below to download_`
 Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Gunakan dengan bijak yak ,jangan merintah yang aneh aneh oke:).
 
 
-  ⌯    *Time* : ${kaitime}
-  ⌯    *Date* : ${kaidate}
-
-
 ┏ ┅ ━━〔〄 Bot Info 〄 〕━ ┅ ━
-┃
-┃
-┃  ⌯    *Bot usr name :* ${pushname} 
-┃  ⌯    *My prefix is :*  ${prefix}
-┃  ⌯    *Owner name :* ${global.OwnerName} 
-┃  ⌯    *Bot runtime :* ${runtime(process.uptime())} 
-┃  ⌯    *Platform :* Linux
+┃ ⌯    *Time* : ${kaitime}
+┃ ⌯    *Date* : ${kaidate}
+┃ ⌯    *Bot usr name :* ${pushname} 
+┃ ⌯    *My prefix is :*  ${prefix}
+┃ ⌯    *Owner name :* ${global.OwnerName} 
+┃ ⌯    *Bot runtime :* ${runtime(process.uptime())} 
+┃ ⌯    *Platform :* Linux
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
 ┏ ┅ ━━〔〄 Core 〄 〕━ ┅ ━
@@ -6925,8 +6922,8 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃
 ┃
 ┃  ⌯     ${prefix}join
-┃ ⌯     ${prefix}self
-┃ ⌯     ${prefix}public
+┃  ⌯     ${prefix}self
+┃  ⌯     ${prefix}public
 ┃  ⌯     ${prefix}restart
 ┃  ⌯     ${prefix}sleep
 ┃  ⌯     ${prefix}setbotpp
@@ -6935,34 +6932,34 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃  ⌯     ${prefix}listgc
 ┃  ⌯     ${prefix}listpc
 ┃  ⌯     ${prefix}getcase
-┃ ⌯     ${prefix}bangroup
+┃  ⌯     ${prefix}bangroup
 ┃  ⌯     ${prefix}broadcast
 ┃  ⌯     ${prefix}bye
 ┃  ⌯     ${prefix}block
 ┃  ⌯     ${prefix}unblock
 ┃  ⌯     ${prefix}ban add
-┃ ⌯     ${prefix}ban del
+┃  ⌯     ${prefix}ban del
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
  
-  〢━━ ❅ Group Moderation ❅ ━━〢
-
-
-  ⌯     ${prefix}add
-  ⌯     ${prefix}invite
-  ⌯     ${prefix}remove
-  ⌯     ${prefix}promote
-  ⌯     ${prefix}demote
-  ⌯     ${prefix}grouplink
-  ⌯     ${prefix}group-event
-  ⌯     ${prefix}groupsetting
-  ⌯     ${prefix}setname
-  ⌯     ${prefix}setgcpp
-  ⌯     ${prefix}setdesc
-  ⌯     ${prefix}revoke
-  ⌯     ${prefix}tagall
-  ⌯     ${prefix}hidetag
-  ⌯     ${prefix}nsfw
-  ⌯     ${prefix}nsnfwmenu
+┏ ┅ ━〔❅ Group Moderation ❅〕━ ┅ ━
+┃
+┃
+┃ ⌯     ${prefix}add
+┃  ⌯     ${prefix}invite
+┃  ⌯     ${prefix}remove
+┃⌯     ${prefix}promote
+┃ ⌯     ${prefix}demote
+┃  ⌯     ${prefix}grouplink
+┃ ⌯     ${prefix}group-event
+┃ ⌯     ${prefix}groupsetting
+┃ ⌯     ${prefix}setname
+┃ ⌯     ${prefix}setgcpp
+┃ ⌯     ${prefix}setdesc
+┃  ⌯     ${prefix}revoke
+┃  ⌯     ${prefix}tagall
+┃  ⌯     ${prefix}hidetag
+┃ ⌯     ${prefix}nsfw
+┃  ⌯     ${prefix}nsnfwmenu
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
   〢━━━❗ *Anti Link ❗* ━━━〢
@@ -7103,27 +7100,27 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃  ⌯     ${prefix}tiktoknowm
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
  
-  〢━━━ 🎐 *Fun* 🎐 ━━━〢
-  ┃
+┏ ┅ ━〔🎐 *Fun* 🎐 ━━━〢
 ┃
- ┃ ⌯     ${prefix}reaction
- ┃ ⌯     ${prefix}cutecheck
+┃
+┃ ⌯     ${prefix}reaction
+┃ ⌯     ${prefix}cutecheck
 ┃  ⌯     ${prefix}couple
- ┃ ⌯     ${prefix}soulmate
+┃ ⌯     ${prefix}soulmate
 ┃  ⌯     ${prefix}handsomecheck
- ┃ ⌯     ${prefix}beautifulcheck
-  ┃⌯     ${prefix}awesomecheck
- ┃ ⌯     ${prefix}greatcheck
+┃ ⌯     ${prefix}beautifulcheck
+┃⌯     ${prefix}awesomecheck
+┃ ⌯     ${prefix}greatcheck
 ┃  ⌯     ${prefix}gaycheck
 ┃  ⌯     ${prefix}uglycheck
 ┃  ⌯     ${prefix}charactercheck
-  ┃⌯     ${prefix}lesbiancheck
- ┃ ⌯     ${prefix}hornychec
-  ┃⌯     ${prefix}prettycheck
- ┃ ⌯     ${prefix}lovelycheck
+┃⌯     ${prefix}lesbiancheck
+┃ ⌯     ${prefix}hornychec
+┃⌯     ${prefix}prettycheck
+┃ ⌯     ${prefix}lovelycheck
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
-  〢━━━ 🈴 *Weeb* 🈴 ━━━〢
+┏ ┅ ━〔 🈴 *Weeb* 🈴 ━━━〢
 ┃
 ┃
 ┃  ⌯     ${prefix}anime
@@ -7150,7 +7147,7 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃⌯     ${prefix}animequote
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
-  〢━━━ ♨️ *Informative* ♨️ ━━━〢
+┏ ┅ ━〔♨️ *Informative* ♨️ ━━━〢
 ┃ 
 ┃
 ┃  ⌯     ${prefix}quote
@@ -7161,7 +7158,7 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃  ⌯     ${prefix}stalknumber
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
-  〢━━━ 🪁 *Essentials* 🪁 ━━━〢
+┏ ┅ ━〔🪁 *Essentials* 🪁 ━━━〢
 ┃
 ┃
 ┃ ⌯     ${prefix}qr
@@ -7171,7 +7168,7 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃ ⌯     ${prefix}translate, 
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
  
- 〢━━━ 🎗 *Others* 🎗 ━━━〢
+┏ ┅ ━〔🎗 *Others* 🎗 ━━━〢
 ┃
 ┃
 ┃  ⌯     ${prefix}stickermeme
@@ -7181,30 +7178,10 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃  ⌯     ${prefix}darkjoke
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
-  〢━━━ ⚠️ *NSFW* ⚠️ ━━━〢
-┃
-┃ 
-┃ ⌯   🍁 Type *${prefix}nsfw* then enable 
-┃⌯       NSFW (Admin only!)
-┃ ⌯    
-┃  ⌯   🍁 Then type *${prefix}nsfwmenu* for
-┃ ⌯       all NSFW commands.
-┃  ⌯    
-┃ ⌯   『  *${global.BotName}*  』
-┃ ⌯       Developed By: *Kai*
-┃  ⌯    
-┃ ⌯   🍁 To use any of these
-┃  ⌯       commands type.
-┃ ⌯    
-┃  ⌯   *${prefix}<Command name>*.
-┃  ⌯    
-┃ ⌯   🍁 To get Support Group link
-┃ ⌯     type *${prefix}support*.
-┃ ⌯    
-┃  ⌯    
-┃  ⌯   🍁 Type *${prefix}help* to get
-┃  ⌯       full command list.
-┃
+┏ ┅ ━〔 ⚠️ *THX TO.. * ⚠️ ━━━〢
+┃⌯ALLAH SWT
+┃⌯RLP27
+┃⌯MY BROTHER :)
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ`
         let buttonMessage = {
           video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
