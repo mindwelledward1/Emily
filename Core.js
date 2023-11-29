@@ -7178,7 +7178,7 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃  ⌯     ${prefix}darkjoke
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
-┏ ┅ ━〔 ⚠️ *THX TO.. * ⚠️ ━━━〢
+┏ ┅ ━〔 ⚠️ *THX TO..* ⚠️ ━━━〢
 ┃⌯ALLAH SWT
 ┃⌯RLP27
 ┃⌯MY BROTHER :)
